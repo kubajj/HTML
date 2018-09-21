@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title>CSS úloha</title>
 <style type="text/css" >
-	* {
+	body, head {
 		font-family : sans;
 		line-height : 1.5;
 		background-color: #CCF;
@@ -16,6 +16,50 @@
 	DT {
 		font-size : 120%;
 		font-weight : bold;
+	}
+	.area, .population {
+		text-align: right;
+	}
+	THEAD {
+		background-color: #CCF;
+		border-top: 2px solid black;
+		border-bottom: 1px solid black;
+	}
+	TABLE {
+		border-collapse: collapse;
+	}
+	TBODY TR:nth-child(2n) { 
+		background-color: #CCF; 
+	} /*sudé řádky*/
+	TBODY TR:nth-child(2n+1) { 
+		background-color: #DDF; 
+	} /*liché řádky*/
+	TBODY {
+	border-bottom : 2px solid black;
+	}
+	.figure {
+		IMG {
+			margin: 0 auto;
+		}
+	}
+	.note {
+		font-style: italic;
+	}
+	.important {
+		color: #F00;
+	}
+	.important STRONG {
+		background-color: #F00;
+		color : black;
+	}
+	P {
+		text-align : justify;
+	}
+	.info {
+		/*border-image : url(border.png);	*/	
+	}
+	.graph {
+
 	}
 </style>
 </head>

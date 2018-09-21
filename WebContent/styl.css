@@ -2,17 +2,88 @@ H1 {
 color: blue;
 font-size: 200%;
 border-bottom: 2px solid blue;
+font-family: sans-serif;
 text-align: center;
 background-color: #808080;
 }
-H1 EM {
-color: red;
+H1:hover {
+	color : green;
 }
 EM {
 color: green;
+}
+P.face IMG:hover{
+  border-radius: 50%;
 }
 P {
 border : 1px solid black;
 padding : 10px 100px;
 margin : 20px 5px;
+}
+P:hover {
+	background-color : #c0c0c0;
+}
+.nav {
+	color : green;
+	float : left; /*obtékání*/
+	background-color: white;
+	width: 30%; /*zabírá 30% stránky*/
+}
+UL {
+	color : blue;
+}
+A {
+	color : red;
+}
+.nav UL {
+	color : green;	
+}
+.main {
+	margin-left : 30%; /*odsazeno o 30% zleva -> 2 sloupce*/
+}
+
+/* takto se dá komentovat*/
+A:link { /*prostě odkaz*/
+	color : blue;
+}
+A:visited {/*navštívené*/
+	color : magenta;
+}
+A:hover {/*při najetí myši*/
+	color : green;
+}
+A:active {/*při kliknutí*/
+	color : yellow;
+}
+TBODY TR:nth-child(2n) { 
+	background-color: white; 
+} /*sudé řádky*/
+TBODY TR:nth-child(2n+1) { 
+	background-color: #c0c0c0; 
+} /*liché řádky*/
+TABLE {
+	border-collapse: collapse;
+	margin : 1em auto; /*vycentruje tabulku, aby to vyšlo*/
+	width : 50%; /*polovina šířky monitoru*/
+}
+/*TD, TH {
+	padding: 0.5ex;
+}*/
+THEAD {
+	border-top: 2px solid black;
+	border-bottom: 1px solid black;
+}
+TBODY {
+	border-bottom : 2px solid black;
+}
+
+/* Pravidla pro vsechna media. Říká to prohlížeč.*/
+@media print { 
+  /* Pravidla pouze pro tisk (prepisi vyse uvedena). */
+  BODY {
+  	font-family: serif; /*pro tisk bude serif, pro screen sans-serif*/
+  }
+}
+@media screen {
+  /* Pouze obrazovka (dnes monitory, telefony, tablety, ...). */
 }
