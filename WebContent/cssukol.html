@@ -25,16 +25,16 @@
 		border-top: 2px solid black;
 		border-bottom: 1px solid black;
 	}
-	TABLE {
+	TABLE.countries {
 		border-collapse: collapse;
 	}
-	TBODY TR:nth-child(2n) { 
+	TABLE.countries TBODY TR:nth-child(2n) { 
 		background-color: #CCF; 
 	} /*sudé řádky*/
-	TBODY TR:nth-child(2n+1) { 
+	TABLE.countries TBODY TR:nth-child(2n+1) { 
 		background-color: #DDF; 
 	} /*liché řádky*/
-	TBODY {
+	TABLE.countries TBODY {
 	border-bottom : 2px solid black;
 	}
 	.figure {
@@ -73,9 +73,37 @@
     padding-left : 45px;
     margin : 0;
   }
-	.graph {
-
-	}
+  .graph {
+  	border-collapse: separate; 
+  }
+  .graph .g75 {
+  	display: block;
+  	margin-top: 5px;
+  	width: 150px;
+  	height: 15px;
+  	background-color: black;
+  }
+  .graph .g50 {
+  	display: block;
+  	width: 100px;
+  	margin-top: 5px;
+  	height: 15px;
+  	background-color: black;
+  }
+  .graph .g45 {
+  	display: block;
+  	width: 90px;
+  	margin-top: 5px;
+  	height: 15px;
+  	background-color: black;
+  }
+  .graph .g60 {
+  	display: block;
+  	width: 120px;
+  	margin-top: 5px;
+  	height: 15px;
+  	background-color: black;
+  }
 </style>
 </head>
 
